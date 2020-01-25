@@ -27,7 +27,7 @@ class AuthController extends Controller
             'password' => bcrypt($request->password)
         ]);
  
-        $token = $user->createToken('TutsForWeb')->accessToken;
+        $token = $user->createToken('KingAbesh')->accessToken;
  
         return response()->json(['token' => $token], 200);
     }
